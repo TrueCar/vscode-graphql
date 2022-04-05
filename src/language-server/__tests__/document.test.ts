@@ -96,7 +96,7 @@ describe("extractGraphQLDocuments", () => {
 
     it("works with a type parameter", () => {
       const textDocument = mockTextDocument(`
-      gql<TypeParam>\`
+      gql<"TypeParam">\`
         {
           hero {
             ...Hero_character
